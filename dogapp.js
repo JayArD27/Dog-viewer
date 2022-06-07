@@ -1,10 +1,6 @@
 const BREED_URL = "https://dog.ceo/api/breeds/list/all";
 const select = document.querySelector('.breeds-selection');
 // displaying the breed list to the select tag
-// * oh no this is a highlight comment
-// !this is the red comment
-//? this is the question mark comment
-// todo  -- fuck your boss
 fetch(BREED_URL)
     .then (function (response){
         return response.json();
