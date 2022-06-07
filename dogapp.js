@@ -20,7 +20,6 @@ fetch(BREED_URL)
     select.addEventListener("change", function(event){
         // url to random image
         let url = `https://dog.ceo/api/breed/${event.target.value}/images/random`;
-        
         // get the url
         getDog(url);
     });
