@@ -45,12 +45,22 @@ select {
         }
     }
 
-    /* .dog-img {
-        animation: spin 3s ease-in-out infinite;
-    } */
+.spinner {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 10rem;
+    animation: 2s spin linear infinite;
+    display: none;
+}
+.dog-img {
+    display: none;
+}
+.show {
+    display: block;
+}
 
 img {
     margin-top: 1.5rem;
     border-radius: 10px;
-    max-width: 30%;
+    max-width: 40%;
 }
