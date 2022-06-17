@@ -25,13 +25,18 @@ fetch(BREED_URL)
     });
 //fetch the url and change the src of the image
 const img = document.querySelector(".dog-img");
+const spinner = document.querySelector('.spinner');
 
     function getDog(url){
+        spinner.classList.add("show");
+        img.classList.remove("show")
         fetch(url)
             .then(function(response){
                 return response.json();
             })
             .then(function(data){
                 img.src = data.message;
+                spinner.classList.remove("show");
+                img.classList.add("show");
             })
     }
